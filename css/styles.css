@@ -130,7 +130,7 @@ img{
   align-items: center;
 }
 
-@media (max-width: 500px){
+@media (max-width: 400px){
   p{
     color: #2919B3;
   }
