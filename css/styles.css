@@ -163,7 +163,7 @@ body {
   text-align: center;
   height: 1.5em;
   opacity: 0.5;
-  font-size: 25px;
+  font-size: 25 px;
 }
 .hr-text:before {
     content: '';
@@ -186,8 +186,10 @@ body {
 }
 
 
-
 @media (max-width: 500px){
+  h1{
+    color: blue;
+  }
   .toggle-button{
     display: flex;
   }
