@@ -19,6 +19,8 @@ body {
     background-color: #5A7060;
     font-family: 'Karla', sans-serif;
     font-weight: 100;
+    position: relative;
+    min-height: 100%;
 }
 
 /* nav */
@@ -94,9 +96,23 @@ body {
   background-color: #5A6070;
   color: white;
   padding: 2px;
+  /* position: fixed; */
+  bottom: 0;
+  width: 100%;
+  margin-top: 3rem;
+}
+
+.footer-index{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #5A6070;
+  color: white;
+  padding: 2px;
   position: fixed;
   bottom: 0;
   width: 100%;
+  margin-top: 3rem;
 }
 
 .footer-links ul{
@@ -127,6 +143,7 @@ body {
   padding-top: 15rem;
   padding-left: 7em;
   padding-right: 7em;
+  padding-bottom: 5rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -186,6 +203,47 @@ body {
 }
 
 
+.projects-area-container{
+  position: flex;
+}
+
+.projects-container{
+  max-width: 90rem;
+  margin: 0 auto;
+}
+
+.polaroid{
+  display: flex;
+  /* max-width: 90rem; */
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  /* margin: 12rem; */
+}
+
+.polaroid a {
+  background: white;
+  display: inline-block;
+  margin: 55px 0px 0px;
+  padding: 0px 0px 30px;
+  text-align: center;
+  text-decoration: none;
+  /* position: relative; */
+}
+.polaroid a:after {
+  color: black;
+  font-size: 25px;
+  content: attr(title);
+  position: relative;
+  top: 15px;
+  font-family: 'Fira Code', monospace;
+}
+.polaroid img {
+  display: flex;
+  width: 400px;
+  /* height: 350px; */
+}
+
+
 @media (max-width: 400px){
   .toggle-button{
     display: flex;
@@ -231,6 +289,8 @@ body {
 
   .home-flexbox-container{
     padding-top: 8rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   .text-home-container{
