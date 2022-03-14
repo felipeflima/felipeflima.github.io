@@ -247,23 +247,26 @@ body {
 
 
 #code {
+  display: flex;
   border-radius: 5px;
-  width:750px;
+  max-width:750px;
   margin: 0 auto;
   padding-top:15px;
   font-size:30px;
   background: #ccc;
-  height: 700px;
+  max-height: 700px;
   font-family: 'Monaco', 'Courier New';
   text-align: left;
   font-size:13px;
   color: #fafafa;
+  margin-bottom: 5rem;
 }
 
 #console {
+  display: inline;
   width:670px;
   padding: 40px;
-  height: 620px;
+  height: 100%;
   margin:0 auto;
   background: #383737;
 }
@@ -407,6 +410,13 @@ body {
 
   .snowpic{
     border-radius: 8px;
+  }
+
+  .contact-flexbox-container{
+    padding-top: 4rem;
+    padding-left: 0em;
+    padding-right: 2em;
+    justify-content: center;
   }
 
 }
