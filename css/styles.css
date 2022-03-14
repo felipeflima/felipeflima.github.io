@@ -30,6 +30,12 @@ body {
   font-weight: 300;
   margin: 1rem;
   padding-left: 7rem;
+  text-decoration: none;
+}
+
+.fl-name a{
+  text-decoration: none;
+  color: #3a92c8;
 }
 
 .navbar{
