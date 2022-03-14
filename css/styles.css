@@ -35,7 +35,7 @@ body {
 
 .fl-name a{
   text-decoration: none;
-  color: #3a92c8;
+  color: white;
 }
 
 .navbar{
@@ -73,7 +73,7 @@ body {
 
 
 .navbar-links li a:hover{
-  color: #5A6070;
+  color: #3a92c8;
 }
 
 .toggle-button{
