@@ -142,7 +142,7 @@ body {
 }
 
 .footer-links li a:hover{
-  color: #242424;
+  color: black;
 }
 
 /* home content */
@@ -162,11 +162,18 @@ body {
 .text-home-container{
   flex-direction: column;
   max-width: 30em;
+  color: white;
 }
 
 .text-home-container h3{
   font-size: 100%;
   font-size: 4rem;
+}
+
+.text-home-container p{
+  font-weight: 300;
+  font-size: 120%;
+  /* color: black; */
 }
 
 /* home pic */
@@ -176,7 +183,7 @@ body {
   min-width: 20rem;
 }
 
-
+/* title for each screen */
 .hr-text {
   margin-top: 8rem;
   line-height: 1em;
@@ -209,7 +216,7 @@ body {
     background-color: #fcfcfa;
 }
 
-
+/* projects */
 .projects-area-container{
   position:relative;
 }
@@ -230,7 +237,7 @@ body {
   background: white;
   display: inline-block;
   margin: 55px 0px 0px;
-  padding: 0px 0px 30px;
+  padding: 0px 0px 40px;
   text-align: center;
   text-decoration: none;
   width: 400px;
@@ -242,12 +249,16 @@ body {
   content: attr(title);
   position: relative;
   top: 15px;
-  font-family: 'Fira Code', monospace;
+  font-family: 'Montserrat', sans-serif;
 }
 .polaroid a img {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
+}
+
+.polaroid a:hover{
+  background-color: #eeeeee;
 }
 
 
@@ -359,6 +370,10 @@ body {
   font-weight: 200;
   border-radius: 4px;
   color: black;
+}
+
+.send-message button:hover{
+  background-color: #c55555;
 }
 
 
