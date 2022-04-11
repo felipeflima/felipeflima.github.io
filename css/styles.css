@@ -296,8 +296,6 @@ body.light-mode{
   background-color: #eeeeee;
 }
 
-
-
 #code {
   display: flex;
   border-radius: 5px;
@@ -412,7 +410,59 @@ body.light-mode{
 }
 
 
-@media (max-width: 400px){
+.quote-wrapper {
+  width: 700px;
+  padding-top: 15rem;
+  padding-left: 7em;
+  padding-right: 7em;
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.quote-container {
+  width: 100%;
+  background-color: #C26868;
+  padding: 50px 40px;
+  /* box-shadow: 0 20px 65px rgba(87, 11, 16, 0.5); */
+  position: relative;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.quote-container p {
+  color: #fdd8d8;
+  line-height: 2;
+  font-size: 18px;
+  font-weight: 200;
+}
+.quote-container h3 {
+  color: #ffffff;
+  margin: 20px 0 60px 0;
+  text-transform: capitalize;
+  font-style:italic;
+}
+.quote-container button {
+  background-color: white;
+  border: none;
+  padding: 15px 45px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  cursor: pointer;
+}
+
+#quote-extension{
+  padding-top: 5rem;
+  text-align: center;
+  font-weight: 300;
+}
+
+
+
+@media (max-width: 500px){
   .toggle-button{
     display: flex;
   }
