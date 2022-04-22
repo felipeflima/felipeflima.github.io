@@ -453,6 +453,36 @@ body.light-mode{
   cursor: pointer;
 }
 
+.json-container {
+  width: 100%;
+  background-color: #C26868;
+  padding: 50px 40px;
+  position: relative;
+  border-radius: 8px;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.json-container p {
+  color: #fdd8d8;
+  line-height: 2;
+  font-size: 18px;
+  font-weight: 200;
+}
+
+#jsonBtn{
+  background-color: white;
+  border: none;
+  margin-top: 2rem;
+  margin-right: 1rem;
+  padding: 15px 45px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  cursor: pointer;
+}
+
 #quote-extension{
   padding-top: 5rem;
   text-align: center;
