@@ -611,6 +611,10 @@ body.light-mode{
   color: black;
 }
 
+#pong{
+  text-align: center;
+}
+
 
 
 @media (max-width: 500px){
