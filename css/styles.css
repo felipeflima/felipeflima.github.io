@@ -105,6 +105,8 @@ body.light-mode{
   padding-top: 6px;
   margin-right: -15px;
   height: 40px;
+  padding-bottom: 0em;
+  margin-bottom: -22px;
 }
 
 #darkModeWhite {
@@ -112,6 +114,7 @@ body.light-mode{
   margin-left: -15px;
   height: 40px;
   display: inline;
+  margin-bottom: -22px;
 }
 
 .toggle-button{
@@ -206,7 +209,7 @@ body.light-mode{
 .text-home-container{
   vertical-align: middle;
   flex-direction: column;
-  max-width: 35em;
+  max-width: 30em;
   color: white;
 }
 
@@ -263,21 +266,24 @@ body.light-mode{
 /* projects */
 .projects-area-container{
   position:relative;
+  /* background-color: #3a92c8; */
 }
 
 .projects-container{
   max-width: 90rem;
   margin: 0 auto;
   padding: 10px;
+  /* background-color: #c55555; */
 }
 
 .polaroid{
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  /* background-color: #C26868; */
 }
 
-.polaroid a {
+/* .polaroid a {
   background: white;
   display: inline-block;
   margin: 55px 0px 0px;
@@ -303,7 +309,42 @@ body.light-mode{
 
 .polaroid a:hover{
   background-color: #eeeeee;
+} */
+
+.polaroid-shadow {
+  width: 400px;
+  box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.3), 0 10px 20px 0 rgba(0, 0, 0, 0.3);
+  text-align: center;
+  background-color:#C26868;
+  margin-bottom: 1em;
+  margin-top: 2em;
+  max-height: 320px;
 }
+
+.polaroid-shadow img{
+  height: 250px;
+  width: auto;
+}
+
+.polaroid-shadow a{
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+.polaroid-shadow:hover{
+  background-color: #3a92c8;
+}
+/* .polaroid-container{
+  padding: 10px;
+} */
+
+.polaroid-container p{
+  font-size: 20px;
+  /* margin-top: 8px; */
+  font-family: 'Montserrat', sans-serif;
+}
+
 
 #code {
   display: flex;
@@ -416,6 +457,7 @@ body.light-mode{
 
 .send-message button:hover{
   background-color: #c55555;
+  cursor: pointer;
 }
 
 
@@ -547,6 +589,11 @@ body.light-mode{
   color: black;
 }
 
+.return-home button:hover{
+  background-color: rgb(232, 232, 232);
+  cursor: pointer;
+}
+
 
 .return-home button{
   background-color: white;
@@ -610,7 +657,7 @@ body.light-mode{
   }
 
   .home-flexbox-container{
-    padding-top: 8rem;
+    padding-top: 0rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
