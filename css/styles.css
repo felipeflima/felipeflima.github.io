@@ -23,6 +23,7 @@ body {
     min-height: 100%;
 }
 
+/* toggle mode */
 body.light-mode{
   background-color: #C26868;
 }
@@ -95,6 +96,8 @@ body.light-mode{
 
 .navbar-links li a:hover{
   color: #3a92c8;
+  text-decoration: underline;
+  /* font-size: 105%; */
 }
 
 #darkModeBlack{
@@ -178,30 +181,36 @@ body.light-mode{
 
 .footer-links li a:hover{
   color: black;
+  text-decoration: underline;
 }
 
 /* home content */
 .home-flexbox-container{
-  padding-top: 15rem;
-  padding-left: 7em;
-  padding-right: 7em;
-  padding-bottom: 5rem;
+  /* margin-top: 10%; */
+  /* margin-bottom: 1%; */
+  /* padding-top: 1%;
+  padding-bottom: 5%; */
+  position: absolute;
+  width: 100%;
+  /* top: 50%; */
+  transform: translate(0%, 30%);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  align-items: center;
+  align-items:center;
+  /* background-color: #383737; */
   /* flex-flow: row wrap; */
 }
 
 /* home text */
 .text-home-container{
+  vertical-align: middle;
   flex-direction: column;
-  max-width: 30em;
+  max-width: 35em;
   color: white;
 }
 
 .text-home-container h3{
-  font-size: 100%;
   font-size: 4rem;
 }
 
@@ -212,10 +221,10 @@ body.light-mode{
 }
 
 /* home pic */
-.snowpic{
-  max-width: 40%;
-  border-radius: 8px;
-  min-width: 20rem;
+.carousel-item{
+  max-height: 500px;
+  max-width: 800px;
+  /* object-fit: fill; */
 }
 
 /* title for each screen */
@@ -299,22 +308,21 @@ body.light-mode{
 #code {
   display: flex;
   border-radius: 5px;
-  max-width:750px;
+  max-width:800px;
   margin: 0 auto;
   padding-top:15px;
-  font-size:30px;
   background: #ccc;
   max-height: 700px;
   font-family: 'Monaco', 'Courier New';
   text-align: left;
-  font-size:13px;
+  font-size:14px;
   color: #fafafa;
-  margin-bottom: 5rem;
+  margin-bottom: 8rem;
 }
 
 #console {
   display: inline;
-  width:670px;
+  width: 750px;
   padding: 40px;
   height: 100%;
   margin:0 auto;
@@ -390,9 +398,10 @@ body.light-mode{
   /* margin: 0 auto; */
 }
 
-.send-message button{
+.send-message a button{
   background-color: #C26868;
-  width: 50%;
+  max-width: 40em;
+  width: 40em;
   min-height: 50px;
   border: none;
   text-align: center;
@@ -522,6 +531,37 @@ body.light-mode{
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+}
+
+
+.return-home{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin: 1rem;
+  text-decoration: none;
+}
+
+.return-home a{
+  text-decoration: none;
+  color: black;
+}
+
+
+.return-home button{
+  background-color: white;
+  max-width: 40em;
+  width: 50%;
+  min-height: 50px;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  border-radius: 4px;
+  color: black;
 }
 
 

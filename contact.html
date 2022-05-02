@@ -6,6 +6,7 @@
     <title>Felipe Lima</title>
     <link rel="stylesheet" href="./css/styles.css">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="./js/contact.js" defer></script>
     <script src="./js/script.js" defer></script>
   </head>
   <body onload="footer(), nav()">
@@ -13,10 +14,11 @@
     <hr class="hr-text" data-content="CONTACT" />
     <div class="contact-flexbox-container">
       <div class="input-contact-container" id="home-text">
-        <form>
-            <input type="text" id="input-name" placeholder="Name">
-            <input type="text" id="input-email" placeholder="Email">
+        <form action="https://formsubmit.co/felipeflima.2000@gmail.com" method="POST">
+            <input type="email" name="email" id="input-name" placeholder="Name">
+            <input type="email" name="email" id="input-email" placeholder="Email">
             <input type="text" id="input-subject" placeholder="Subject">
+            <input type="hidden" name="_next" value="https://felipeflima.github.io/index.html">
         </form>
       </div>
       <div class="text-area-contact">
@@ -24,7 +26,7 @@
       </div>
     </div>
     <div class="send-message">
-        <button>SEND MESSAGE</button>
+      <a href="thankyou.html"><button class="send-message" id="send-massage-btn" type="submit">SEND MESSAGE</button></a>
     </div>
     <br><br><br>
     <footer class="footer-index">
