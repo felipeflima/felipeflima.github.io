@@ -4,13 +4,29 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="../css/styles.css">
-	<script src="../js/pong.js" async></script>
-	<title>Pong Game</title>
+	<script src="./js/pong.js"></script>
+	<link rel="stylesheet" href="./css/pong.css">
+	<title>Ponog Game</title>
 </head>
 <body>
-	<div id="pong">
-		<canvas></canvas>
-	</div>
+	<div id="wrap">
+		<div id="startMenu">
+		  <h1>Pong</h1>
+		  <button id="startBtn">Start</button>
+		</div>
+		<div id="pauseMenu">
+		  <h1>Pause</h1>
+		  <button id="continueBtn">Continue</button>
+		  <button id="restartBtn">Restart</button>
+		</div>
+		<div id="gameOverMenu">
+		  <h1 id="gameMessage"></h1>
+		  <button id="againBtn">Try again</button>
+		</div>
+		<div id="gameplay">
+		  <canvas id="gameCanvas" width="800" height="600"></canvas>
+		</div>
+	  </div>
+	  
 </body>
 </html>
