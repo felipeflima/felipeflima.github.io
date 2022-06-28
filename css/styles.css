@@ -435,11 +435,12 @@ body.light-mode{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* align-items: center; */
+  align-items: center;
   /* margin: 0 auto; */
+  align-items:center;
 }
 
-.send-message a button{
+.send-message a{
   background-color: #C26868;
   max-width: 40em;
   width: 40em;
@@ -447,7 +448,6 @@ body.light-mode{
   border: none;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   font-size: 20px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 200;
@@ -455,7 +455,7 @@ body.light-mode{
   color: black;
 }
 
-.send-message button:hover{
+.send-message a:hover{
   background-color: #c55555;
   cursor: pointer;
 }
@@ -582,14 +582,28 @@ body.light-mode{
   font-weight: 300;
   margin: 1rem;
   text-decoration: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .return-home a{
+  background-color: white;
+  max-width: 40em;
+  width: 10em;
+  min-height: 50px;
+  border: none;
+  text-align: center;
   text-decoration: none;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  border-radius: 4px;
   color: black;
 }
 
-.return-home button:hover{
+.return-home a:hover{
   background-color: rgb(232, 232, 232);
   cursor: pointer;
 }
