@@ -193,7 +193,7 @@ body.light-mode{
   /* margin-bottom: 1%; */
   /* padding-top: 1%;
   padding-bottom: 5%; */
-  position: absolute;
+  position:static;
   width: 100%;
   /* top: 50%; */
   transform: translate(0%, 30%);
@@ -232,7 +232,7 @@ body.light-mode{
 
 /* title for each screen */
 .hr-text {
-  margin-top: 8rem;
+  margin-top: 15rem;
   line-height: 1em;
   position: relative;
   outline: 0;
