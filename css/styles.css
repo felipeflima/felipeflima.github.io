@@ -13,10 +13,15 @@
   background: transparent;
 } */
 
+
+html {
+    scroll-behavior: smooth;
+  }
+
 body {
     margin: 0;
     padding: 0px;
-    background-color: #5A7060;
+    background-color: #283B35;
     font-family: 'Karla', sans-serif;
     font-weight: 100;
     position: relative;
@@ -27,6 +32,7 @@ body {
 body.light-mode{
   background-color: #C26868;
 }
+
 
 .fl-name.light-mode a{
   color: black;
@@ -230,47 +236,16 @@ body.light-mode{
   /* object-fit: fill; */
 }
 
-/* title for each screen */
-.hr-text {
-  margin-top: 15rem;
-  line-height: 1em;
-  position: relative;
-  outline: 0;
-  border: 0;
-  color: black;
-  text-align: center;
-  height: 1.5em;
-  opacity: 0.5;
-  font-size: 25px;
-}
-.hr-text:before {
-    content: '';
-    background: linear-gradient(to right, transparent, black, transparent);
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: 100%;
-    height: 1px;
-}
-.hr-text:after {
-    content: attr(data-content);
-    position: relative;
-    display: inline-block;
-    color: black;
-    padding: 0 0.5em;
-    line-height: 1.5em;
-    color: black;
-    background-color: #fcfcfa;
-}
 
 /* projects */
-.projects-area-container{
+/* .projects-area-container{
   position:relative;
-  /* background-color: #3a92c8; */
-}
+  /* background-color: #3a92c8; /
+} */
 
 .projects-container{
-  max-width: 90rem;
+  position:relative;
+  max-width: 70rem;
   margin: 0 auto;
   padding: 10px;
   /* background-color: #c55555; */
@@ -279,46 +254,19 @@ body.light-mode{
 .polaroid{
   display: flex;
   justify-content: space-evenly;
-  flex-wrap: wrap;
+  flex-wrap:wrap;
   /* background-color: #C26868; */
 }
 
-/* .polaroid a {
-  background: white;
-  display: inline-block;
-  margin: 55px 0px 0px;
-  padding: 0px 0px 40px;
-  text-align: center;
-  text-decoration: none;
-  width: 400px;
-  height: 280px;
-}
-.polaroid a:after {
-  color: black;
-  font-size: 25px;
-  content: attr(title);
-  position: relative;
-  top: 15px;
-  font-family: 'Montserrat', sans-serif;
-}
-.polaroid a img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-}
-
-.polaroid a:hover{
-  background-color: #eeeeee;
-} */
-
 .polaroid-shadow {
-  width: 400px;
+  width: 500px;
   box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.3), 0 10px 20px 0 rgba(0, 0, 0, 0.3);
-  text-align: center;
+  /* text-align: center; */
   background-color:#C26868;
-  margin-bottom: 1em;
-  margin-top: 2em;
-  max-height: 320px;
+  margin-bottom: 2em;
+  margin-top: 0em;
+  /* max-height: 320px; */
+  text-align: center;
 }
 
 .polaroid-shadow img{
@@ -329,7 +277,7 @@ body.light-mode{
 .polaroid-shadow a{
   text-decoration: none;
   color: black;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .polaroid-shadow:hover{
@@ -340,9 +288,66 @@ body.light-mode{
 } */
 
 .polaroid-container p{
-  font-size: 20px;
-  /* margin-top: 8px; */
+  font-size: 15px;
+  font-weight: 200;
+  margin-top: 8px;
+  margin-left: 9px;
+  margin-right: 9px;
   font-family: 'Montserrat', sans-serif;
+}
+
+#about{
+    position:absolute;
+    margin-top: 8.5em;    
+}
+
+.about{
+    position:relative;
+    /* margin-top: 14em;     */
+    background-color: #2c5146;
+    display: block;   
+    text-align: center;
+}
+
+.about h1{
+    padding-top: 1.5cm;
+    font-weight: 300;
+    font-size: 300%;
+}
+
+.proud{
+    position:relative;
+    margin-top: 14em;  
+    background-color: #252A29;
+    display: block;   
+    text-align: center;
+    height: 5cm;
+}
+
+.proud img{
+    max-height: 4cm;
+    margin-top: .5cm;
+}
+
+#proj{
+  position: absolute;
+  margin-top: -0.9em;
+  /* background-color: #c55555; */
+}
+
+.proj{
+    position:relative;
+    /* margin-top: 14em;   */
+    /* background-color: #252A29; */
+    display: block;   
+    text-align: center;
+    margin-bottom: .5cm;
+    height: 5cm;
+}
+
+.proj img{
+    max-height: 4cm;
+    margin-top: .5cm;
 }
 
 
@@ -353,17 +358,16 @@ body.light-mode{
   margin: 0 auto;
   padding-top:15px;
   background: #ccc;
-  max-height: 700px;
+  max-height: 950px;
   font-family: 'Monaco', 'Courier New';
   text-align: left;
   font-size:14px;
   color: #fafafa;
-  margin-bottom: 8rem;
 }
 
 #console {
   display: inline;
-  width: 750px;
+  width: 100%;
   padding: 40px;
   height: 100%;
   margin:0 auto;

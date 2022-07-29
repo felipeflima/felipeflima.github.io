@@ -5,15 +5,6 @@ toggleButton.addEventListener('click', () => {
     navbarLinks.classList.toggle('active');
 })
 
-function nav (){
-    $("#nav-placeholder").load("../nav.html");
-}
-
-function footer(){
-    $("#footer-placeholder").load("../footer.html");
-}
-
-
 var blackToggle = document.getElementById("darkModeBlack");
 var whiteToggle =  document.getElementById("darkModeWhite");
 whiteToggle.addEventListener('click', () => {
@@ -47,5 +38,8 @@ currImg.addEventListener('click', () => {
     }
     currImg.src = imgarr[i];
 })
+
+
+
 
 

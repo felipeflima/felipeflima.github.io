@@ -10,6 +10,9 @@
     <script src="./js/script.js" defer></script>
   </head>
   <body>
+    <a id="home"></a>
+
+    <!-- Navbar -->
     <nav class="navbar">
       <div class="fl-name"><a href="index.html">FELIPE LIMA</a></div>
       <a href="#" class="toggle-button">
@@ -19,23 +22,20 @@
       </a>
       <div class="navbar-links">
           <ul>
-              <li><a href="../index.html">Home</a></li>
-              <li><a href="../projects.html">Projects</a></li>
-              <li><a href="../about.html">About</a></li>
-              <li><a href="../contact.html">Contact</a></li>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#proj">Projects</a></li>
               <li><a href="pong.html">Pong Game</a></li>
-              <li><img  id="darkModeBlack" src="../img/dark-mode-black.png" alt="dark mode toggle" height="70"></li>
-              <li><img  id="darkModeWhite" src="../img/dark-mode-white.png" alt="dark mode toggle" height="70"></li>
-
           </ul>
       </div>
-  </nav>   
-    <div id="nav-placeholder"></div>
+    </nav>   
+
+    <!-- Hello, Wolrd! -->
     <div class="home-flexbox-container">
       <div class="text-home-container" id="home-text">
-        <h3>HEY! I'M FELIPE</h3>
-        <p>I am currently a Computer Science major at the University
-          of Colorado Boulder, minoring in Business and Creative Technology & Design. I love to snowboard and I have four dogs!
+        <h3>Hello, World!</h3>
+        <p>My name is Felipe and am currently a Computer Science major at the University
+          of Colorado Boulder, minoring in Business and Creative Technology & Design.
         </p>
       </div>
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -64,10 +64,106 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
-      <!-- <img class="snowpic" src="./img/me.jpg" alt="Me in the snow" id="home-image"> -->
     </div>
-    <footer class="footer-index">
-      <div class="">ATLS 2200</div>
+
+    <!-- About -->
+    <a id="about"></a>
+    <!-- Division -->
+    <div class="proud">
+        <img src="./img/about.svg" alt="">
+    </div>
+
+    <div class="about">
+        <br><br>
+        <div id="code">
+            <div id="console">
+            &gt; Felipe.origin<br>
+            <span class="answer">&nbsp;&nbsp;=&gt; "Belo Horizonte, MG, Brazil"<br><br><br></span>
+            &gt; Felipe.age<br>
+            <span class="answer">&nbsp;&nbsp;=&gt; "22"<br><br><br></span>
+            &gt; Felipe.education<br>
+            <span class="answer">&nbsp;&nbsp;=&gt; "University of Colorado Boulder"<br><br><br></span>
+            &gt; Felipe.major<br>
+            <span class="answer">&nbsp;&nbsp;=&gt; "Computer Science"<br><br><br></span>
+            &gt; Felipe.minors<br>
+            <span class="answer">&nbsp;&nbsp;=&gt; "Business and Creative Technology & Design"<br><br><br></span>
+            &gt; Felipe.expectedGraduation<br>
+            <span class="answer">&nbsp;&nbsp;=&gt; "December 2022"<br><br><br></span>
+            &gt; Felipe.interests<br>
+            <span class="answer">&nbsp;&nbsp;=&gt; ["Code", "Design", "Cars", "Music", "Snowboarding", "Blockchain"]<br><br><br></span>
+            &gt; Felipe.resume<br>
+            <span class="answer">&nbsp;&nbsp;=&gt;  "<a target="_blank" href="./img/feliperesume.pdf">feliperesume.pdf</a>"<br><br><br></span>
+            &gt; Felipe.socials<br>
+            <span class="answer">&nbsp;&nbsp;=&gt; Links to socials<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Instagram: <a target="_blank" href="https://www.instagram.com/felipeflima/">@felipeflima</a><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LinkedIn: <a target="_blank" href="https://www.linkedin.com/in/felipe-lima00/">Felipe Lima</a><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; GitHub: <a target="_blank" href="https://github.com/felipeflima">@felipeflima</a><br>
+            <br><br></span>
+            &gt; Felipe.email<br>
+            <span class="answer">&nbsp;&nbsp;=&gt; "<a target="_blank" href="mailto:felipelima.2000o@gmail.com">felipelima.2000@gmail.com</a>"<br><br></span>
+            </div>
+        </div>
+        <a id="proj"></a>
+        <br><br><br>
+       
+    </div>
+
+    <!-- Projects -->
+    <div class="proj">
+        <img src="./img/porjects.svg" alt="">
+    </div>
+
+
+    <!-- <div class="projects-area-container"> -->
+        <div class="projects-container">
+            <div class="polaroid">
+                <div class="polaroid-shadow">
+                    <a href="https://github.com/nkarsanb7682/PaklanTanda" target="_blank">
+                        <img src="/img/paklan.png" alt="Assignment" style="width:100%">
+                        <div class="polaroid-container">
+                            <p><b>Paklan</b> is a digital wallet that provides the unbanked and underbanked sector of the population access to online financial services, such as P2P transactions, Tandas and Bill Payments.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="polaroid-shadow">
+                    <a href="https://github.com/gamalucas/Plutus" target="_blank">
+                        <img src="/img/plutus.png" alt="Assignment" style="width:100%">
+                        <div class="polaroid-container">
+                            <p><b>Plutus</b> is a simplified prtifolio manager that allows users to register for an account, list assests and automatically calculate the current worth of their portfolio.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="polaroid-shadow">
+                  <a href="https://github.com/Ryan-Oroke/camelCase-project" target="_blank">
+                      <img src="/img/freedrop.png" alt="Assignment" style="width:100%">
+                      <div class="polaroid-container">
+                          <p><b>FreeDrop</b> is a location-based file sharing platform that uses a geo-location from a Google Maps API allowing users to share any file to all users at a specific location. </p>
+                      </div>
+                  </a>
+              </div>
+              <div class="polaroid-shadow">
+                <a href="https://luppi.app/" target="_blank">
+                    <img src="/img/luppi2.png" alt="Assignment" style="width:100%">
+                    <div class="polaroid-container">
+                        <p><b>Luppi</b> is an event management and ticketing company with a twist. After a user buys a ticket, they gain access to match, chat and hang out with people attending the event. </p>
+                    </div>
+                </a>
+              </div>
+            </div>  
+        </div>
+    <!-- </div> -->
+    <div class="pong">
+      <div class="score">
+        <div id="player-score">0</div>
+        <div id="computer-score">0</div>
+      </div>
+      <div class="ball" id="ball"></div>
+      <div class="paddle left" id="player-paddle"></div>
+      <div class="paddle right" id="computer-paddle"></div>
+    </div>
+    
+    <footer class="footer">
+      <div class="">@Felipe Lima</div>
       <div class="footer-links">
           <ul>
               <li><a href="https://www.linkedin.com/in/felipe-lima00/">Linkedin</a></li>
