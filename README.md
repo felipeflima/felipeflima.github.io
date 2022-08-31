@@ -1,2 +1,2 @@
 # My portfolio website
-[Felipe](felipeflima.github.io)
+[felipeflima.github.io](https://felipeflima.github.io/)
